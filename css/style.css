@@ -58,12 +58,13 @@ a {
     .grid {
       flex-direction: column; } }
 
-.col {
-  padding: .5rem; }
-  .col--left {
-    width: 20%; }
-  .col--right {
-    width: 80%; }
+.col--left {
+  width: 20%;
+  min-width: 200px;
+  margin-right: .5rem; }
+
+.col--right {
+  width: 80%; }
 
 aside a {
   display: block;

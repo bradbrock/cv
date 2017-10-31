@@ -66,10 +66,12 @@ a{
   }
 }
 .col{
-  padding: .5rem;
+//   padding: .5rem;
   
   &--left{
     width: 20%;
+    min-width: 200px;
+    margin-right: .5rem;
   }
   &--right{
     width: 80%;
