@@ -6,13 +6,17 @@ article {
   margin: 0 0 2rem; }
 
 header {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   border-top: 6px #357da3 solid;
   padding-top: 1rem;
   font-size: .85rem;
   color: #357da3; }
-  @media (min-width: 800px) and (min-height: 800px) {
+  @media (min-width: 800px) {
     header {
-      margin-top: 4rem;
+      margin-top: 4rem; } }
+  @media (min-height: 800px) {
+    header {
       margin-bottom: 6rem; } }
 
 h1 {
@@ -78,7 +82,7 @@ aside p {
 @media (max-width: 800px) {
   aside {
     display: flex;
-    flex-flow: row-reverse nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between; } }
 
 footer {
@@ -90,4 +94,5 @@ footer {
   .col {
     width: 100%; }
   .col--left {
+    padding-bottom: 6px;
     order: 2; } }
