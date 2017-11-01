@@ -87,9 +87,16 @@ a {
   width: 20%;
   min-width: 200px;
   margin-right: .5rem; }
+  @media (max-width: 800px) {
+    .col--left {
+      padding-bottom: 6px; } }
 
 .col--right {
   width: 80%; }
+
+@media (max-width: 800px) {
+  .col {
+    width: 100%; } }
 
 @media (max-width: 460px) {
   .title {
@@ -113,9 +120,3 @@ footer {
   padding-top: .25rem;
   border-top: 2px #357da3 solid;
   text-align: center; }
-
-@media (max-width: 800px) {
-  .col {
-    width: 100%; }
-  .col--left {
-    padding-bottom: 6px; } }
