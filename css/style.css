@@ -2,11 +2,12 @@ body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   body > .grid {
     margin-top: 2rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
     border-top: 6px #357da3 solid; }
     @media (min-width: 800px) {
       body > .grid {
-        margin-top: 4rem; } }
+        margin-top: 4rem;
+        padding-top: 3rem; } }
     @media (min-height: 800px) {
       body > .grid {
         margin-bottom: 6rem; } }
@@ -53,6 +54,9 @@ a {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
+  @media (max-width: 800px) {
+    .contain {
+      width: 100%; } }
 
 .grid {
   display: flex;
@@ -84,5 +88,4 @@ footer {
   .col {
     width: 100%; }
   .col--left {
-    padding-bottom: 6px;
-    order: 2; } }
+    padding-bottom: 6px; } }
