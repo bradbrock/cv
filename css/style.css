@@ -12,23 +12,12 @@ body > .grid {
 
 .grid {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   align-items: flex-start; }
-  @media (max-width: 800px) {
+  @media (min-width: 1050px) {
     .grid {
-      flex-direction: column; } }
-
-.col--left {
-  width: 20%;
-  min-width: 200px;
-  margin-right: .5rem; }
-  @media (max-width: 800px) {
-    .col--left {
-      padding-bottom: 6px; } }
-
-.col--right {
-  width: 80%; }
+      flex-direction: row; } }
 
 @media (max-width: 800px) {
   .col {
@@ -51,14 +40,15 @@ h3 {
   color: #357da3; }
 
 h4 {
-  margin-bottom: .15rem;
+  margin-bottom: .25rem;
   font-weight: 400; }
 
 p {
   font-weight: 300; }
 
 ul {
-  padding-left: 1.75rem;
+  margin-top: 0;
+  padding-left: 1.2rem;
   font-weight: 300; }
 
 a {
@@ -66,8 +56,15 @@ a {
   text-decoration: none;
   color: inherit; }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  position: relative; }
   @media (max-width: 460px) {
     body {
       font-size: .85rem; } }
@@ -77,17 +74,54 @@ article {
   margin: 0 0 2rem; }
 
 header {
-  color: #357da3; }
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 270px;
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #357da3;
+  color: #fff; }
   @media (max-width: 800px) {
     header {
+      position: static;
+      width: 100%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      align-items: flex-start; } }
+      align-items: flex-start;
+      padding: 1rem; }
+      header h2,
+      header a:last-child {
+        margin-bottom: 0; } }
   @media (max-width: 460px) {
     header {
       flex-direction: column;
       align-items: stretch; } }
+
+main {
+  max-width: 1200px;
+  margin-left: 270px;
+  padding: 4rem; }
+  @media (max-width: 800px) {
+    main {
+      margin-left: auto; } }
+  @media (max-width: 620px) {
+    main {
+      padding-top: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media (max-width: 460px) {
+    main {
+      padding-top: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem; } }
 
 .contain {
   width: 95%;

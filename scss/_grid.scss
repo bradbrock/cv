@@ -14,28 +14,15 @@ body > .grid{
 }
 .grid{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     align-items: flex-start;
-  
-    @media (max-width: 800px) {
-        flex-direction: column;
+
+    @media (min-width: 1050px) {
+        flex-direction: row;
     }
 }
 .col{
-    &--left{
-        width: 20%;
-        min-width: 200px;
-        margin-right: .5rem;
-
-        @media (max-width: 800px) {
-            padding-bottom: 6px;
-        }
-    }
-    &--right{
-        width: 80%;
-    }
-
     @media (max-width: 800px) {
         width: 100%;
     }
