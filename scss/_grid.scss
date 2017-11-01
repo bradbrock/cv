@@ -1,0 +1,42 @@
+body > .grid{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 6px $blue solid;
+
+    @media (min-width: 800px) {
+        margin-top: 4rem;
+        padding-top: 3rem;
+    }
+
+    @media (min-height: 800px) {
+        margin-bottom: 6rem;
+    }
+}
+.grid{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+.col{
+    &--left{
+        width: 20%;
+        min-width: 200px;
+        margin-right: .5rem;
+
+        @media (max-width: 800px) {
+            padding-bottom: 6px;
+        }
+    }
+    &--right{
+        width: 80%;
+    }
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+}

@@ -1,36 +1,38 @@
-body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-  body > .grid {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 6px #357da3 solid; }
-    @media (min-width: 800px) {
-      body > .grid {
-        margin-top: 4rem;
-        padding-top: 3rem; } }
-    @media (min-height: 800px) {
-      body > .grid {
-        margin-bottom: 6rem; } }
-  @media (max-width: 460px) {
-    body {
-      font-size: .85rem; } }
+body > .grid {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 6px #357da3 solid; }
+  @media (min-width: 800px) {
+    body > .grid {
+      margin-top: 4rem;
+      padding-top: 3rem; } }
+  @media (min-height: 800px) {
+    body > .grid {
+      margin-bottom: 6rem; } }
 
-article {
-  width: 100%;
-  margin: 0 0 2rem; }
-
-header {
-  color: #357da3; }
+.grid {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start; }
   @media (max-width: 800px) {
-    header {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: flex-start; } }
-  @media (max-width: 460px) {
-    header {
-      flex-direction: column;
-      align-items: stretch; } }
+    .grid {
+      flex-direction: column; } }
+
+.col--left {
+  width: 20%;
+  min-width: 200px;
+  margin-right: .5rem; }
+  @media (max-width: 800px) {
+    .col--left {
+      padding-bottom: 6px; } }
+
+.col--right {
+  width: 80%; }
+
+@media (max-width: 800px) {
+  .col {
+    width: 100%; } }
 
 h1 {
   margin-bottom: 0;
@@ -64,7 +66,29 @@ a {
   text-decoration: none;
   color: inherit; }
 
-/* Layout */
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  @media (max-width: 460px) {
+    body {
+      font-size: .85rem; } }
+
+article {
+  width: 100%;
+  margin: 0 0 2rem; }
+
+header {
+  color: #357da3; }
+  @media (max-width: 800px) {
+    header {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-start; } }
+  @media (max-width: 460px) {
+    header {
+      flex-direction: column;
+      align-items: stretch; } }
+
 .contain {
   width: 95%;
   max-width: 1200px;
@@ -73,30 +97,6 @@ a {
   @media (max-width: 800px) {
     .contain {
       width: 100%; } }
-
-.grid {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start; }
-  @media (max-width: 800px) {
-    .grid {
-      flex-direction: column; } }
-
-.col--left {
-  width: 20%;
-  min-width: 200px;
-  margin-right: .5rem; }
-  @media (max-width: 800px) {
-    .col--left {
-      padding-bottom: 6px; } }
-
-.col--right {
-  width: 80%; }
-
-@media (max-width: 800px) {
-  .col {
-    width: 100%; } }
 
 @media (max-width: 460px) {
   .title {
