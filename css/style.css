@@ -1,27 +1,76 @@
-body > .grid {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 6px #357da3 solid; }
-  @media (min-width: 800px) {
-    body > .grid {
-      margin-top: 4rem;
-      padding-top: 3rem; } }
-  @media (min-height: 800px) {
-    body > .grid {
-      margin-bottom: 6rem; } }
+* {
+  box-sizing: border-box; }
 
-.grid {
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+h1, h1, h3, h4, h5, h6, p {
+  margin-top: 0; }
+
+button {
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1rem; }
+
+table {
+  border-collapse: collapse; }
+
+thead {
+  font-weight: bold; }
+
+th, td {
+  padding: 8px;
+  border: 1px #d3d3d3 solid; }
+
+.heading {
+  border-bottom: 1px gray solid;
+  padding-bottom: 4px; }
+
+article {
+  width: 90%;
+  margin: 40px auto 0; }
+
+article section {
+  margin-bottom: 40px;
+  padding-left: 20px; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: flex-start; }
-  @media (min-width: 1050px) {
-    .grid {
-      flex-direction: row; } }
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  @media (max-width: 600px) {
+    body {
+      height: auto;
+      flex-direction: column;
+      font-size: .85rem; } }
 
-@media (max-width: 800px) {
-  .col {
-    width: 100%; } }
+main {
+  max-width: 1200px;
+  padding: 4rem 4rem 0;
+  overflow: scroll; }
+  @media (max-width: 620px) {
+    main {
+      padding-top: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media (max-width: 460px) {
+    main {
+      padding-top: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+
+article {
+  width: 100%;
+  margin: 0 0 2rem; }
 
 h1 {
   margin-bottom: 0;
@@ -56,28 +105,6 @@ a {
   text-decoration: none;
   color: inherit; }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-body {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-  @media (max-width: 600px) {
-    body {
-      height: auto;
-      flex-direction: column;
-      font-size: .85rem; } }
-
-article {
-  width: 100%;
-  margin: 0 0 2rem; }
-
 header {
   display: flex;
   flex-flow: column nowrap;
@@ -100,30 +127,6 @@ header {
   @media (max-width: 400px) {
     header {
       flex-flow: column nowrap; } }
-
-main {
-  max-width: 1200px;
-  padding: 4rem 4rem 0;
-  overflow: scroll; }
-  @media (max-width: 620px) {
-    main {
-      padding-top: 2rem;
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-  @media (max-width: 460px) {
-    main {
-      padding-top: 1rem;
-      padding-left: 1rem;
-      padding-right: 1rem; } }
-
-.contain {
-  width: 95%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  @media (max-width: 800px) {
-    .contain {
-      width: 100%; } }
 
 @media (max-width: 600px) {
   .title {
@@ -149,3 +152,25 @@ footer {
   padding-top: .25rem;
   border-top: 2px #357da3 solid;
   text-align: center; }
+
+.grid {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start; }
+  @media (min-width: 1050px) {
+    .grid {
+      flex-direction: row; } }
+
+@media (max-width: 800px) {
+  .col {
+    width: 100%; } }
+
+.contain {
+  width: 95%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 800px) {
+    .contain {
+      width: 100%; } }

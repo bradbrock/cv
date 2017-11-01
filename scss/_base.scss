@@ -1,0 +1,42 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    @media (max-width: 600px) {
+        height: auto;
+        flex-direction: column;
+        font-size: .85rem;
+    }
+}
+
+main{
+    max-width: 1200px;
+    padding: 4rem 4rem 0;
+    overflow: scroll;
+
+    @media (max-width: 620px) {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media (max-width: 460px) {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+article{
+    width: 100%;
+    margin: 0 0 2rem;
+}

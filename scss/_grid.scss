@@ -1,17 +1,3 @@
-body > .grid{
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 6px $blue solid;
-
-    @media (min-width: 800px) {
-        margin-top: 4rem;
-        padding-top: 3rem;
-    }
-
-    @media (min-height: 800px) {
-        margin-bottom: 6rem;
-    }
-}
 .grid{
     display: flex;
     flex-flow: column nowrap;
