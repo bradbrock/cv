@@ -4,11 +4,10 @@ header{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    color: #fff;
     padding: 3.25rem 2rem;
     box-shadow: 2px 0px 20px 5px rgba(0, 0, 0, 0.3);
-    // background: $blue;
     background: linear-gradient(15deg, #1e5799 0%, #076FBF 33%, #1e5799 72%, #1c398a 100%);
-    color: #fff;
 
     @media (max-width: 800px) {
         h2,
@@ -42,5 +41,19 @@ header{
     }
     @media (max-width: 600px) {
         text-align: right;
+    }
+}
+
+.bg-pattern{
+    position: relative;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/97665/absurdidad.png');
     }
 }
