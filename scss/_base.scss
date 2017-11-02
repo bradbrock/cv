@@ -20,7 +20,7 @@ body{
 }
 
 main{
-    max-width: 1200px;
+    flex: 1 0 auto;
     padding: 4rem 4rem 0;
     overflow: scroll;
 
@@ -33,6 +33,10 @@ main{
         padding-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    > section{
+        max-width: 1200px;
     }
 }
 
