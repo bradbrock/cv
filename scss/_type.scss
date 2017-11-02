@@ -13,9 +13,14 @@ h2{
 }
 
 h3{
-    font-weight: 600;
+    display: inline-block;
+    padding: 0 40px 0 10px;
+    border-radius: 1px;
+    background: #357da3;
+    font-weight: 500;
     text-transform: uppercase;
-    color: $blue;
+    color: #fff;
+    box-shadow: 5px 5px 0px 0px rgba(53,125,163,0.35);
 }
 
 h4{
