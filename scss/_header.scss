@@ -18,31 +18,28 @@ header{
     @media (max-width: 600px) {
         padding: 1rem;
         flex-direction: row;
-        align-items: stretch;
-    }
-    @media (max-width: 400px) {
-        flex-flow: column nowrap;
+        align-items: center;
     }
 }
 
 .title{
     @media (max-width: 600px) {
         text-align: left;
-    }
-    @media (max-width: 400px) {
-        text-align: center;
+        font-size: .65rem;
     }
 }
 
 .contact{
+    p{
+        @media (max-width: 400px) {
+            display: none;
+        }
+    }
     > *{
         display: block;
         margin-bottom: .25rem;
     }
     @media (max-width: 600px) {
         text-align: right;
-    }
-    @media (max-width: 400px) {
-        text-align: center;
     }
 }

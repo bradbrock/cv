@@ -157,18 +157,16 @@ header {
     header {
       padding: 1rem;
       flex-direction: row;
-      align-items: stretch; } }
-  @media (max-width: 400px) {
-    header {
-      flex-flow: column nowrap; } }
+      align-items: center; } }
 
 @media (max-width: 600px) {
   .title {
-    text-align: left; } }
+    text-align: left;
+    font-size: .65rem; } }
 
 @media (max-width: 400px) {
-  .title {
-    text-align: center; } }
+  .contact p {
+    display: none; } }
 
 .contact > * {
   display: block;
@@ -177,10 +175,6 @@ header {
 @media (max-width: 600px) {
   .contact {
     text-align: right; } }
-
-@media (max-width: 400px) {
-  .contact {
-    text-align: center; } }
 
 footer {
   padding-top: .25rem;
