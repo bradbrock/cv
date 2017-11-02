@@ -74,13 +74,29 @@ article {
 
 .list-row {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
   list-style: none;
   padding-left: 0; }
   .list-row li {
-    flex: 1 0 auto; }
+    margin-bottom: 20px;
+    flex: 0 1 50%; }
+    @media (min-width: 500px) {
+      .list-row li {
+        flex: 0 1 33.3333%; } }
+    @media (min-width: 600px) {
+      .list-row li {
+        flex: 0 1 100%; } }
+    @media (min-width: 750px) {
+      .list-row li {
+        flex: 0 1 50%; } }
+    @media (min-width: 850px) {
+      .list-row li {
+        flex: 0 1 33.3333%; } }
+    @media (min-width: 1200px) {
+      .list-row li {
+        flex: 0 1 20%; } }
     .list-row li span {
       display: block;
       font-size: .7rem;
