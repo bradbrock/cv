@@ -147,7 +147,7 @@ header {
   text-align: center;
   padding: 3.25rem 2rem;
   box-shadow: 2px 0px 20px 5px rgba(0, 0, 0, 0.3);
-  background: #357da3;
+  background: linear-gradient(15deg, #1e5799 0%, #076FBF 33%, #1e5799 72%, #1c398a 100%);
   color: #fff; }
   @media (max-width: 800px) {
     header h2,
