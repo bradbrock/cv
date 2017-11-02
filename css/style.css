@@ -55,9 +55,10 @@ body {
       font-size: .85rem; } }
 
 main {
-  max-width: 1200px;
   padding: 4rem 4rem 0;
   overflow: scroll; }
+  main > * {
+    max-width: 1200px; }
   @media (max-width: 620px) {
     main {
       padding-top: 2rem;
