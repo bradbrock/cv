@@ -153,15 +153,14 @@ header {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
   color: #fff;
-  padding: 3.25rem 2rem;
+  padding: 3.25rem 0;
   box-shadow: 2px 0px 20px 5px rgba(0, 0, 0, 0.3);
   background: linear-gradient(15deg, #1e5799 0%, #076FBF 33%, #1e5799 72%, #1c398a 100%); }
   @media (max-width: 800px) {
-    header h2,
-    header a:last-child {
+    header h2 {
       margin-bottom: 0; } }
   @media (max-width: 600px) {
     header {
@@ -196,6 +195,26 @@ header {
     bottom: 0;
     right: 0;
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/97665/absurdidad.png"); }
+
+.link-gallery {
+  margin: 0;
+  list-style: none;
+  padding-left: 0; }
+  .link-gallery li {
+    margin-bottom: 0;
+    padding: 1rem;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid; }
+  .link-gallery a {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none; }
+    .link-gallery a img {
+      display: block;
+      margin-right: 10px;
+      border-radius: 50%; }
 
 footer {
   padding-top: .25rem;
