@@ -174,3 +174,15 @@ footer {
   @media (max-width: 800px) {
     .contain {
       width: 100%; } }
+
+@media print {
+  header {
+    box-shadow: none;
+    color: #000; }
+  h3 {
+    color: #000; }
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  footer {
+    border: 0; } }
