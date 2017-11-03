@@ -153,7 +153,7 @@ header {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   text-align: center;
   color: #fff;
   padding: 3.25rem 2rem;
@@ -214,8 +214,23 @@ header {
       width: 30px;
       height: 30px;
       fill: #252424;
-      margin-right: 10px;
-      border-radius: 50%; }
+      margin-right: 10px; }
+
+#linkedin-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: auto;
+  padding: 0;
+  border: 2px black solid;
+  border-radius: 50%; }
+  #linkedin-icon svg {
+    width: 14px;
+    height: 14px;
+    margin: 0; }
 
 footer {
   padding-top: .25rem;
