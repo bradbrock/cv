@@ -1,11 +1,16 @@
 h1{
-    margin-bottom: 0;
-    font-weight: 600;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    border-bottom: 2px white solid;
+    font-size: 1.7rem;
+    font-weight: 300;
 }
 
 h2{
     margin-top: 0;
-    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: 300;
 
     @media (max-width: 460px) {
         margin-bottom: .5rem;
