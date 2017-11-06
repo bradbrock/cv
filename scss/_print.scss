@@ -1,7 +1,36 @@
 @media print {
+    h1 {
+        margin-bottom: 0;
+    }
+    body{
+        background: none;
+        line-height: 1.2;
+        font-size: .75rem;
+    }
+    .bg-pattern{
+        position: static;
+        
+        &:after {
+            content: "";
+            position: static;
+            display: none;
+        }
+    }
     header{
         box-shadow: none;
         color: #000;
+    }
+    .link-gallery{
+        display: none;
+    }
+    .list-row {
+        li {
+            flex: 0 1 20%;
+        }
+    }
+    .contact{
+        display: block;
+        text-align: right;
     }
     h3{
         color: #000;
@@ -10,6 +39,7 @@
     main{
         padding-left: 1rem;
         padding-right: 1rem;
+        overflow: visible;
     }
     footer{
         border: 0;
