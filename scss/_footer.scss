@@ -32,3 +32,52 @@ footer {
         padding-bottom: 10px;
     }
 }
+
+.footer-col {
+    p {
+        margin-bottom: .25rem;
+        margin-right: 10px;
+
+        @media (max-width: 900px) {
+            margin-right: 0;
+        }
+    }
+    .banner {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        color: #000;
+        margin-top: 0;
+        padding: 0;
+        border: 0;
+        text-align: left;
+
+        @media (max-width: 900px) {
+            margin-bottom: 10px;
+            justify-content: center;
+
+            p {
+                order: 0;
+                margin-right: 10px;
+            }
+        }
+
+        .banner__actions{
+            justify-content: flex-start;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        a {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 900px) {
+        text-align: center;
+    }
+}
