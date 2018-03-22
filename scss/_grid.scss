@@ -1,6 +1,6 @@
 .grid{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
 
@@ -9,7 +9,15 @@
     }
 }
 .col{
+    padding: .5rem;
     @media (max-width: 800px) {
         width: 100%;
     }
+}
+
+.col--sidebar{
+    width: 20%;
+}
+.col--body{
+    width: 80%;
 }

@@ -87,23 +87,7 @@ article {
   list-style: none;
   padding-left: 0; }
   .list-row li {
-    margin-bottom: 20px;
-    flex: 0 1 50%; }
-    @media (min-width: 500px) {
-      .list-row li {
-        flex: 0 1 33.3333%; } }
-    @media (min-width: 600px) {
-      .list-row li {
-        flex: 0 1 100%; } }
-    @media (min-width: 750px) {
-      .list-row li {
-        flex: 0 1 50%; } }
-    @media (min-width: 850px) {
-      .list-row li {
-        flex: 0 1 33.3333%; } }
-    @media (min-width: 1200px) {
-      .list-row li {
-        flex: 0 1 20%; } }
+    margin-bottom: 20px; }
     .list-row li span {
       display: block;
       font-size: .7rem;
@@ -349,16 +333,24 @@ footer {
 
 .grid {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start; }
   @media (min-width: 1050px) {
     .grid {
       flex-direction: row; } }
 
-@media (max-width: 800px) {
-  .col {
-    width: 100%; } }
+.col {
+  padding: .5rem; }
+  @media (max-width: 800px) {
+    .col {
+      width: 100%; } }
+
+.col--sidebar {
+  width: 20%; }
+
+.col--body {
+  width: 80%; }
 
 .banner {
   display: flex;
