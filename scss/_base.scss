@@ -26,7 +26,6 @@ main{
     padding-bottom: 0;
     padding-left: 2rem;
     padding-right: 2rem;
-    // overflow: scroll;
 
     @media (max-width: 1000px) {
         padding-left: .25rem;
@@ -40,10 +39,6 @@ main{
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
-    // section{
-    //     padding: 1rem;
-    // }
 }
 
 article{
