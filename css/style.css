@@ -235,7 +235,7 @@ header {
       padding-left: 2rem; }
   .link-gallery a {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     text-decoration: none; }
@@ -244,8 +244,8 @@ header {
       display: block;
       width: 20px;
       height: 20px;
-      fill: #252424;
-      margin-right: 10px; }
+      margin-bottom: 4px;
+      fill: #252424; }
   @media (max-width: 600px) {
     .link-gallery {
       display: flex;
