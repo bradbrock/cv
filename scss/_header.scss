@@ -40,8 +40,8 @@ header{
     h1{
         border-bottom-color: black;
     }
-
     @media (max-width: 600px) {
+        margin-bottom: 1rem;
         text-align: left;
     }
     @media (max-width: 400px) {
