@@ -1,23 +1,20 @@
 .grid{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 
-    @media (min-width: 1050px) {
-        flex-direction: row;
-    }
-}
-.col{
-    padding: .5rem;
-    @media (max-width: 800px) {
-        width: 100%;
+    @media (max-width: 800px){
+        flex-direction: column-reverse;
     }
 }
 
 .col--sidebar{
-    width: 20%;
-}
-.col--body{
-    width: 80%;
+    max-width: 320px;
+
+    @media (max-width: 800px){
+        width: 100%;
+        max-width: none;
+        margin-top: 2rem;
+    }
 }

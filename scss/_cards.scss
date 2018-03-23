@@ -1,0 +1,18 @@
+.card{
+    margin: 0;
+    padding: 1rem 2rem;
+    border: 1px solid #e8e8e9;
+    background: #fff;
+
+    &:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+    article{
+        margin: 0 0 2rem;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
