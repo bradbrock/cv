@@ -17,15 +17,18 @@ header{
         }
     }
     @media (max-width: 600px) {
-        padding: 1rem;
-        flex-direction: row;
-        align-items: center;
-    }
-    @media (max-width: 400px) {
         flex-direction: column;
         padding-top: .75rem;
         padding-bottom: .75rem;
+        // padding: 1rem;
+        // flex-direction: row;
+        align-items: center;
     }
+    // @media (max-width: 400px) {
+    //     flex-direction: column;
+    //     padding-top: .75rem;
+    //     padding-bottom: .75rem;
+    // }
 }
 
 .title {
