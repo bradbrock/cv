@@ -71,8 +71,8 @@ main {
   @media (max-width: 460px) {
     main {
       padding-top: 1rem;
-      padding-left: 1rem;
-      padding-right: 1rem; } }
+      padding-left: 0;
+      padding-right: 0; } }
 
 article {
   width: 100%;
@@ -106,6 +106,9 @@ article {
         width: 33.3333%;
         margin-bottom: 2rem;
         padding-left: 1rem; } }
+    @media (max-width: 550px) {
+      .list-row > li {
+        width: 50%; } }
   @media (max-width: 800px) {
     .list-row {
       flex-direction: row; } }
@@ -189,25 +192,11 @@ header {
     border-bottom-color: black; }
   @media (max-width: 600px) {
     .title {
-      margin-bottom: 1rem;
-      text-align: left; } }
+      margin-bottom: 1rem; } }
   @media (max-width: 400px) {
     .title {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      align-items: center;
       width: 100%;
       margin-bottom: 16px; }
-      .title h1 {
-        border-right: 1px #fff solid;
-        margin-right: 10px;
-        padding-right: 10px;
-        border-bottom: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        text-align: right;
-        font-size: 1.4rem; }
       .title h2 {
         font-size: 1.1rem; } }
 
@@ -357,6 +346,10 @@ footer {
 
 .col {
   padding: 0 1rem; }
+  @media (max-width: 550px) {
+    .col {
+      padding-left: .5rem;
+      padding-right: .5rem; } }
 
 @media (max-width: 800px) {
   .col--sidebar {
@@ -413,6 +406,10 @@ footer {
   background: #fff; }
   .card:not(:last-child) {
     margin-bottom: 40px; }
+  @media (max-width: 550px) {
+    .card {
+      padding-left: .85rem;
+      padding-right: .85rem; } }
   .card article {
     margin: 0 0 2rem; }
     .card article:last-child {

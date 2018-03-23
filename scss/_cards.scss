@@ -8,6 +8,11 @@
         margin-bottom: 40px;
     }
 
+    @media (max-width: 550px){
+        padding-left: .85rem;
+        padding-right: .85rem;
+    }
+
     article{
         margin: 0 0 2rem;
 
