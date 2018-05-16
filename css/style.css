@@ -470,7 +470,11 @@ footer {
       width: 100%;
       min-height: 100px;
       background-image: url("../img/heifer01.jpg");
-      background-size: cover; }
+      background-size: 100%;
+      background-position: center;
+      transition: background-size .15s; }
+    .gallery-item a:hover:before {
+      background-size: 110%; }
 
 .gallery-item__title {
   margin-top: .5rem;
