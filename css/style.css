@@ -472,9 +472,11 @@ footer {
       background-image: url("../img/heifer01.jpg");
       background-size: 100%;
       background-position: center;
-      transition: background-size .2s ease-out; }
+      box-shadow: inset 0px 0px 0px 0px transparent;
+      transition: background-size .3s ease-out, box-shadow .8s ease-out; }
     .gallery-item a:hover:before {
-      background-size: 110%; }
+      background-size: 105%;
+      box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.5); }
 
 #einsteinsProject:before {
   background-image: url("../img/einstein01.jpg");
