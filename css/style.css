@@ -447,3 +447,40 @@ footer {
     overflow: visible; }
   footer {
     border: 0; } }
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.gallery-item {
+  width: 100%;
+  max-width: 25%;
+  padding: 2rem; }
+  .gallery-item a {
+    display: block;
+    border: 1px #e8e8e9 solid; }
+
+.gallery-item__image {
+  display: block;
+  width: 100%; }
+
+.gallery-item__title {
+  margin-top: .5rem;
+  margin-bottom: .75rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  font-size: .85rem;
+  font-weight: 600; }
+
+.gallery-item__subtitle {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  font-size: .8rem;
+  font-weight: 400; }
