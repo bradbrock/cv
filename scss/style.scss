@@ -22,17 +22,26 @@
 .gallery-item{
     width: 100%;
     max-width: 25%;
-    padding: 2rem;
+    padding: 1rem;
 
     a{
         display: block;
         // box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
         border: 1px #e8e8e9 solid;
+
+        &:before{
+            content: "";
+            display: block;
+            width: 100%;
+            min-height: 100px;
+            background-image: url('../img/heifer01.jpg');
+            background-size: cover;
+        }
     }
 }
 .gallery-item__image{
-    display: block;
-    width: 100%;
+    // display: block;
+    // width: 100%;
 }
 .gallery-item__title{
     margin-top: .5rem;

@@ -460,14 +460,17 @@ footer {
 .gallery-item {
   width: 100%;
   max-width: 25%;
-  padding: 2rem; }
+  padding: 1rem; }
   .gallery-item a {
     display: block;
     border: 1px #e8e8e9 solid; }
-
-.gallery-item__image {
-  display: block;
-  width: 100%; }
+    .gallery-item a:before {
+      content: "";
+      display: block;
+      width: 100%;
+      min-height: 100px;
+      background-image: url("../img/heifer01.jpg");
+      background-size: cover; }
 
 .gallery-item__title {
   margin-top: .5rem;
