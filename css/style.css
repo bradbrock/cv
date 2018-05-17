@@ -459,8 +459,8 @@ footer {
 
 .gallery-item {
   width: 100%;
-  max-width: 25%;
-  padding: 1rem; }
+  max-width: 33.3333%;
+  padding: 1rem 2rem; }
   .gallery-item a {
     display: block;
     border: 1px #e8e8e9 solid; }
@@ -472,14 +472,31 @@ footer {
       background-image: url("../img/heifer01.jpg");
       background-size: 100%;
       background-position: center;
+      border-bottom: 1px #e7e7e8 solid;
       box-shadow: inset 0px 0px 0px 0px transparent;
-      transition: background-size .3s ease-out, box-shadow .8s ease-out; }
+      transition: background-size .2s ease-out, box-shadow .1s ease-out; }
     .gallery-item a:hover:before {
       background-size: 105%;
-      box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.5); }
+      box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.2); }
 
 #einsteinsProject:before {
   background-image: url("../img/einstein01.jpg");
+  background-position: top center; }
+
+#heiferCartProject:before {
+  background-image: url("../img/heifer-cart01.jpg");
+  background-position: top center; }
+
+#visionWorksProject:before {
+  background-image: url("../img/vw.png");
+  background-position: top center; }
+
+#kalkomeyProject:before {
+  background-image: url("../img/kalk05.png");
+  background-position: top center; }
+
+#curvesProject:before {
+  background-image: url("../img/curves03.png");
   background-position: top center; }
 
 .gallery-item__title {
