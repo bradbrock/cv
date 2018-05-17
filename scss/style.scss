@@ -22,7 +22,19 @@
 .gallery-item{
     width: 100%;
     max-width: 33.3333%;
-    padding: 1rem 2rem;
+    padding: 1rem;
+
+    @media (max-width: 900px){
+        max-width: 50%;
+    }
+    @media (max-width: 550px){
+        max-width: 100%;
+    }
+
+    @media (min-width: 1200px){
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 
     a{
         display: block;
