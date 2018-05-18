@@ -478,7 +478,7 @@ footer {
       content: "";
       display: block;
       width: 100%;
-      min-height: 100px;
+      min-height: 150px;
       background-image: url("../img/heifer01.jpg");
       background-size: 100%;
       background-position: center;
