@@ -353,8 +353,14 @@ footer {
       padding-left: .5rem;
       padding-right: .5rem; } }
 
+@media (min-height: 600px) {
+  .col--sidebar {
+    position: sticky;
+    top: 50px; } }
+
 @media (max-width: 800px) {
   .col--sidebar {
+    position: static;
     width: 100%;
     max-width: none;
     margin-top: 2rem; } }

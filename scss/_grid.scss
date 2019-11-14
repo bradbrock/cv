@@ -18,7 +18,13 @@
 }
 .col--sidebar{
 
+    @media (min-height: 600px){
+        position: sticky;
+        top: 50px;
+    }
+
     @media (max-width: 800px){
+        position: static;
         width: 100%;
         max-width: none;
         margin-top: 2rem;
