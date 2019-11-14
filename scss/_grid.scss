@@ -25,6 +25,11 @@
     }
 }
 .col--body{
+    width: 80%;
+
+    @media (max-width: 800px){
+        width: auto;
+    }
     li{
         margin-bottom: .25rem;
     }

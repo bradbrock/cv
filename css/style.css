@@ -358,8 +358,13 @@ footer {
     max-width: none;
     margin-top: 2rem; } }
 
-.col--body li {
-  margin-bottom: .25rem; }
+.col--body {
+  width: 80%; }
+  @media (max-width: 800px) {
+    .col--body {
+      width: auto; } }
+  .col--body li {
+    margin-bottom: .25rem; }
 
 .banner {
   display: flex;
