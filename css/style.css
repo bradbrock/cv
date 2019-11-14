@@ -483,7 +483,7 @@ footer {
       background-size: 100%;
       background-position: center;
       border-bottom: 1px #e7e7e8 solid;
-      box-shadow: inset 0px 0px 0px 0px transparent;
+      box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
       transition: background-size .2s ease-out, box-shadow .1s ease-out; }
     .gallery-item a:hover:before {
       background-size: 105%;
