@@ -344,7 +344,7 @@ footer {
   align-items: flex-start; }
   @media (max-width: 800px) {
     .grid {
-      flex-direction: column-reverse; } }
+      flex-direction: column; } }
 
 .col {
   padding: 0 1rem; }
